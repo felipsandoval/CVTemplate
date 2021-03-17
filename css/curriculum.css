@@ -7,27 +7,27 @@
 
 @font-face{
   font-family: title;
-  src: url("fonts/edition.TTF");
+  src: url("edition.TTF");
 }
 
 @font-face{
   font-family: footer;
-  src: url("fonts/rights.ttf");
+  src: url("rights.ttf");
 }
 
 @font-face{
   font-family: brand;
-  src: url("fonts/academic.ttf");
+  src: url("academic.ttf");
 }
 
 @font-face{
   font-family: body;
-  src: url("fonts/philo.ttf");
+  src: url("philo.ttf");
 }
 
 @font-face{
   font-family: subtitle;
-  src: url("fonts/sexythin.ttf");
+  src: url("sexythin.ttf");
 }
 
 
