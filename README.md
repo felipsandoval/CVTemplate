@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2dbfce5e-5d22-425a-aa6b-abd07352ed91/deploy-status)](https://app.netlify.com/sites/felipsandovalcv/deploys)
 
-[WESITE DEMO](https://felipsandovalcv.netlify.app/)
+[WEBSITE DEMO](https://felipsandovalcv.netlify.app/)
 
 ENG:
 CV made from a template with a little design variations for personal purposes.
