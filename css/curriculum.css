@@ -448,7 +448,7 @@ a{
 /* Personalizations */
 
 .title-name{
-	font-family: "title";
+	font-family: "body";
 	color: black;
 	font-size: 40px;
 	text-shadow: 1px 1px 2px #fff;
