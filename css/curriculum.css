@@ -334,7 +334,7 @@ a{
 }
 
 .panel{
-	margin-top:16px;margin-bottom:16px
+	margin-top:16px; margin-bottom:16px
 }
 
 .card-2{
@@ -458,21 +458,21 @@ a{
 	color: #490B3D;
 }
 
-.footer-copyright{
-	margin: 2px;
-	font-family: "footer";
-	font-size: 20px;
-	color: #000;
-	cursor: default;
-}
-
 .special{
 	font-family: subtitle;
 	font-size: 25px;
 	text-transform: uppercase;
 }
 
-/* Brand website from footer */
+/* SANDOVAL brand website generic */
+
+.footer-copyright{
+	margin-bottom: 1.25rem;
+	font-family: "footer";
+	font-size: 20px;
+	color: #000;
+	cursor: default;
+}
 
 .name-brand {
 	font-size: 15px;
