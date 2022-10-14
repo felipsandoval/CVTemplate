@@ -51,7 +51,7 @@
 
 .body-color,.hover-body-color:hover,.body-color,.hover-body-color:hover{
 	color:#000;
-	background-color:#F4F4F4;
+	background-color:#e5e8eb;
 }
 
 .white,.hover-white:hover{
@@ -466,16 +466,52 @@ a{
 	cursor: default;
 }
 
-.name-brand{
-	font-size: 15px;
-	color: #000000;
-}
-
 .special{
 	font-family: subtitle;
 	font-size: 25px;
 	text-transform: uppercase;
 }
+
+/* Brand website from footer */
+
+.name-brand {
+	font-size: 15px;
+	color: #00203F;
+	background-image: linear-gradient(
+	  to right,
+	  #5ec999,
+	  #5ec999 50%,
+	  #00203F 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	display: inline-block;
+	padding: 5px 0;
+	position: relative;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+  }
+  
+.name-brand:before {
+	content: '';
+	background: #5ec999;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+.name-brand:hover {
+   background-position: 0;
+  }
+  
+.name-brand:hover::before {
+	width:100%;
+  }
 
 /* Social Buttons */
 
@@ -507,6 +543,7 @@ a{
 }
 
 /* For links */
+
 .special-link {
 	box-shadow: inset 0 0 0 0 #ADEFD1;
 	padding: 0 .25rem;
