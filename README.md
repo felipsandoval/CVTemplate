@@ -5,7 +5,7 @@
 [WEBSITE DEMO](https://felipsandovalcv.netlify.app/)
 
 ENG:
-CV made from a template with a little design variations for personal purposes.
+Digital edition of my CV. Made with a lot of love and care :)
 
 SPA:
-CV hecho a partir de una plantilla con pequeñas variaciones en el diseño y el contenido.
+Edición digital de mi CV. Hecho con mucho amor y mimo :)
