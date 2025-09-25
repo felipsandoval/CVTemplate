@@ -1,0 +1,171 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Terminal Theme - Minimalist Bash Terminal */
+  --background: #0a0a0a; /* Pure black terminal background */
+  --foreground: #00ff00; /* Classic terminal green */
+  --card: #111111; /* Slightly lighter black for cards */
+  --card-foreground: #00ff00;
+  --popover: #111111;
+  --popover-foreground: #00ff00;
+  --primary: #00ff00; /* Terminal green */
+  --primary-foreground: #0a0a0a;
+  --secondary: #333333; /* Dark gray */
+  --secondary-foreground: #ffffff;
+  --muted: #1a1a1a;
+  --muted-foreground: #888888; /* Gray for secondary text */
+  --accent: #ffff00; /* Terminal yellow for highlights */
+  --accent-foreground: #0a0a0a;
+  --destructive: #ff0000; /* Terminal red */
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input: #1a1a1a;
+  --ring: #00ff00;
+  --chart-1: #00ff00;
+  --chart-2: #ffff00;
+  --chart-3: #ff0000;
+  --chart-4: #00ffff;
+  --chart-5: #ff00ff;
+  --radius: 0rem; /* No rounded corners for terminal look */
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #00ff00;
+  --sidebar-primary: #00ff00;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #333333;
+  --sidebar-ring: #00ff00;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-mono); /* Use monospace for everything */
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-mono;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Terminal-style scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+
+  /* Terminal cursor animation */
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .terminal-cursor::after {
+    content: "_";
+    animation: blink 1s infinite;
+    color: var(--primary);
+  }
+
+  /* Terminal prompt styling */
+  .terminal-prompt::before {
+    content: "$ ";
+    color: var(--primary);
+    font-weight: bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Parallax utilities */
+  .parallax-slow {
+    transform: translateY(calc(var(--scroll-y, 0) * 0.5px));
+  }
+
+  .parallax-medium {
+    transform: translateY(calc(var(--scroll-y, 0) * 0.3px));
+  }
+
+  .parallax-fast {
+    transform: translateY(calc(var(--scroll-y, 0) * 0.1px));
+  }
+
+  /* Terminal-specific utilities */
+  .terminal-border {
+    border: 1px solid var(--border);
+  }
+
+  .terminal-shadow {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+  }
+}
