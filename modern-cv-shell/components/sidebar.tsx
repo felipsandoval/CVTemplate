@@ -41,20 +41,20 @@ export function Sidebar() {
               <div className="flex items-center gap-2 text-xs lg:text-sm">
                 <Briefcase className="w-3 h-3 text-primary flex-shrink-0" />
                 <span className="break-words">
-                  Técnico de ingeniería en{" "}
+                  Software Engineer at{" "}
                   <a
-                    href="https://www.axians.es"
+                    href="https://www.digimobil.es"
                     target="_blank"
                     className="text-primary hover:text-accent underline"
                     rel="noreferrer"
                   >
-                    Axians España
+                    DIGI Spain
                   </a>
                 </span>
               </div>
               <div className="flex items-center gap-2 text-xs lg:text-sm">
                 <MapPin className="w-3 h-3 text-primary flex-shrink-0" />
-                <span>Madrid, España</span>
+                <span>Madrid, Spain</span>
               </div>
               <div className="flex items-center gap-2 text-xs lg:text-sm">
                 <Mail className="w-3 h-3 text-primary flex-shrink-0" />
@@ -62,7 +62,7 @@ export function Sidebar() {
                   href="mailto:felipesandoval1111@gmail.com"
                   className="text-primary hover:text-accent underline break-all"
                 >
-                  felipesandoval1111@gmail.com
+                  hola@felipsandoval.com
                 </a>
               </div>
             </div>
@@ -106,9 +106,9 @@ export function Sidebar() {
           <div className="terminal-prompt text-sm mb-2">locale -a</div>
           <div className="space-y-2">
             <div className="flex justify-between items-center">
-              <span className="text-xs lg:text-sm">Castellano</span>
+              <span className="text-xs lg:text-sm">Spanish</span>
               <Badge variant="secondary" className="text-xs bg-secondary text-secondary-foreground">
-                Nativo
+                Native
               </Badge>
             </div>
             <div className="flex justify-between items-center">

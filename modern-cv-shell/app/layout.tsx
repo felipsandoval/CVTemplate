@@ -7,9 +7,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Felipe Sandoval - Técnico de Ingeniería",
-  description: "CV profesional de Felipe Sandoval - Técnico de Ingeniería en Axians España",
-  generator: "v0.app",
+  title: "Felipe Sandoval - Software Engineer",
+  description: "Professional CV from Felipe Sandoval - Software Engineer currently at DIGI Spain",
 }
 
 export default function RootLayout({

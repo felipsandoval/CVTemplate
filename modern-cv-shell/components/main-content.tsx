@@ -25,7 +25,7 @@ export function MainContent() {
               <span className="text-xs text-muted-foreground ml-2">felipe@cv:~$ ./introduce.sh</span>
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4 text-balance">
-              Técnico de <span className="text-primary">Ingeniería</span>
+              Software <span className="text-primary">Engineer</span>
             </h1>
             <p className="text-sm md:text-base lg:text-xl text-muted-foreground mb-6 text-pretty max-w-2xl mx-auto leading-relaxed">
               Especializado en plataformas OTT e IPTV, desarrollo de scripts y gestión de infraestructuras tecnológicas.
