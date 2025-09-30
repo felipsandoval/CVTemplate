@@ -28,284 +28,393 @@ export function MainContent() {
               Software <span className="text-primary">Engineer</span>
             </h1>
             <p className="text-sm md:text-base lg:text-xl text-muted-foreground mb-6 text-pretty max-w-2xl mx-auto leading-relaxed">
-              Especializado en plataformas OTT e IPTV, desarrollo de scripts y gestión de infraestructuras tecnológicas.
-              Experiencia en proyectos para Vodafone, Orange TV, BBVA y más.
+              I'm passionate about software development, and I have worked with multiple programming
+              languages throughout my career, with a strong affinity for Python and recent experience in C++
+              and Ruby. My work focuses on building scalable, secure, and high-performance applications, with
+              an eye for both user experience (UX/UI) and technical efficiency.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
                 Python
               </Badge>
               <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
+                C++
+              </Badge>
+              <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
+                Ruby
+              </Badge>
+              <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
                 JavaScript
               </Badge>
               <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
-                OTT/IPTV
+                Go
               </Badge>
               <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
-                CDN
+                Linux
               </Badge>
               <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
-                Automatización
+                Docker
               </Badge>
+              <Badge variant="secondary" className="text-xs px-2 py-1 bg-secondary text-secondary-foreground">
+                MySQL
+              </Badge>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Terminal Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-card border border-border p-6 terminal-border">
+            <div className="flex items-center gap-2 mb-4">
+              <Terminal className="w-4 h-4" />
+              <span className="text-xs text-muted-foreground">felipe@cv:~$ cat skills.json</span>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="space-y-3">
+                <h3 className="font-semibold text-primary">Languages</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div>Python</div>
+                  <div>C++</div>
+                  <div>Ruby</div>
+                  <div>JavaScript</div>
+                  <div>TypeScript</div>
+                  <div>Go</div>
+                  <div>PHP</div>
+                  <div>SQL</div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-semibold text-primary">Frameworks & Libraries</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div>React</div>
+                  <div>Next.js</div>
+                  <div>Node.js</div>
+                  <div>FastAPI</div>
+                  <div>Django</div>
+                  <div>Tailwind CSS</div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-semibold text-primary">Tools & Technologies</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div>Docker</div>
+                  <div>Git</div>
+                  <div>Linux</div>
+                  <div>MySQL</div>
+                  <div>PostgreSQL</div>
+                  <div>Redis</div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-semibold text-primary">Networking & Infrastructure</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div>FTTH/GPON</div>
+                  <div>SNMP</div>
+                  <div>OTT/IPTV</div>
+                  <div>Network Automation</div>
+                  <div>System Administration</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section className="py-12 lg:py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div
-            className="flex items-center gap-3 mb-8 lg:mb-12"
-            style={{ transform: `translateY(${Math.max(0, (scrollY - 800) * 0.1)}px)` }}
-          >
-            <Terminal className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
-            <div className="terminal-prompt text-2xl lg:text-4xl font-bold">cat experience.log</div>
+      <section className="py-16 px-4 bg-muted/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-12">
+            <Terminal className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Work Experience</h2>
           </div>
 
-          <div className="space-y-6 lg:space-y-8">
-            {/* Current Position */}
-            <Card
-              className="p-4 lg:p-8 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 1000) * 0.05)}px)` }}
-            >
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <Calendar className="w-4 h-4 text-primary" />
-                    <span className="text-xs lg:text-sm text-muted-foreground">2019 - Presente</span>
-                    <Badge className="bg-primary text-primary-foreground text-xs">ACTIVO</Badge>
-                  </div>
-                  <h3 className="text-lg lg:text-xl font-semibold mb-2">
-                    Técnico de Ingeniería para{" "}
-                    <a
-                      href="https://www.axians.es"
-                      target="_blank"
-                      className="text-primary hover:text-accent underline inline-flex items-center gap-1"
-                      rel="noreferrer"
-                    >
-                      Axians España
-                      <ExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
-                    </a>
-                  </h3>
+          <div className="space-y-8">
+            {/* DIGI Experience */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Developer – FTTH Engineering Department</h3>
+                  <p className="text-primary font-medium">DIGI</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2024 - Present</span>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm lg:text-base">
-                Nivel 2/3 OTT e IPTV para proyectos de Vodafone, Andorra Telecom, Mapfre, Orange TV, BBVA, Iberdrola y
-                más clientes.
-              </p>
-              <ul className="space-y-2 text-xs lg:text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Gestión de plataforma, CDN, Head-End y VSPP
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Soporte al departamento de operaciones en el área de vídeo y telepresencia
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Desarrollo de scripts y tareas de automatización
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Contacto con proveedores como Harmonic, Ericsson, Edgeware, Infoblox, Viaccess-Orca, Cisco
-                </li>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Responsible for developing scripts and tools for network environments, including OLT, ONT, HGU, and CPE devices.</li>
+                <li>• Manage and maintain GPON projects focused on provisioning and control.</li>
+                <li>• Processes automation through scripting in network protocols like SNMP.</li>
+                <li>• Linux Systems Administrator.</li>
               </ul>
             </Card>
 
-            {/* Art Merchant */}
-            <Card
-              className="p-4 lg:p-8 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 1200) * 0.05)}px)` }}
-            >
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <Calendar className="w-4 h-4 text-primary" />
-                    <span className="text-xs lg:text-sm text-muted-foreground">2014 - Presente</span>
-                    <Badge className="bg-primary text-primary-foreground text-xs">ACTIVO</Badge>
-                  </div>
-                  <h3 className="text-lg lg:text-xl font-semibold mb-2">Marchante de arte</h3>
+            {/* Axians Application Developer */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Application Developer</h3>
+                  <p className="text-primary font-medium">AXIANS SPAIN</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2023 - 2024</span>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm lg:text-base">
-                Ayudante multitarea en atelier de arte para el artista neoexpresionista abstracto{" "}
-                <a
-                  href="https://www.pedrosandoval.com"
-                  target="_blank"
-                  className="text-primary hover:text-accent underline inline-flex items-center gap-1"
-                  rel="noreferrer"
-                >
-                  Pedro Sandoval
-                  <ExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
-                </a>
-              </p>
-              <ul className="space-y-2 text-xs lg:text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Definición y consecución de estrategias digitales para consolidar presencia online
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Desarrollo de modelo negocio para comercializar NFTs
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Creación y desarrollo de comunidades digitales
-                </li>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Performed full-stack development using Python, JavaScript, PHP, Go, MySQL, and other languages.</li>
+                <li>• Designed software architecture and integrated solutions into existing systems.</li>
+                <li>• Diagnosed and solved technical and performance issues.</li>
+                <li>• Managed configuration and deployment of applications in development and production environments.</li>
+                <li>• Automation of repetitive processes and validated REST APIs using Postman.</li>
               </ul>
             </Card>
 
-            {/* Full Stack Developer */}
-            <Card
-              className="p-4 lg:p-8 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 1400) * 0.05)}px)` }}
-            >
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Calendar className="w-4 h-4 text-primary" />
-                    <span className="text-xs lg:text-sm text-muted-foreground">2017</span>
-                  </div>
-                  <h3 className="text-lg lg:text-xl font-semibold mb-2">Desarrollador Full Stack</h3>
+            {/* Axians Engineering Technician */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Engineering Technician – Video Support Department</h3>
+                  <p className="text-primary font-medium">AXIANS SPAIN</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2019 - 2024</span>
                 </div>
               </div>
-              <ul className="space-y-2 text-xs lg:text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Programador Full Stack en{" "}
-                  <a
-                    href="https://shopify.dev/api/liquid"
-                    target="_blank"
-                    className="text-primary hover:text-accent underline"
-                    rel="noreferrer"
-                  >
-                    Liquid de Shopify
-                  </a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Desarrollo de estrategias SEO y SEM para e-commerce{" "}
-                  <a
-                    href="https://www.avrileevans.com"
-                    target="_blank"
-                    className="text-primary hover:text-accent underline"
-                    rel="noreferrer"
-                  >
-                    Avrile Evans
-                  </a>
-                </li>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Provided level 2/3 support on OTT and IPTV projects for major clients.</li>
+                <li>• Managed platform operations, Head-End, and VSPP.</li>
+                <li>• Delivered advanced technical support for video and multimedia systems.</li>
+                <li>• Developed scripts to automate routine tasks and collaborated with key technology providers such as Harmonic, Ericsson, Infoblox, and Logi.</li>
+                <li>• Offered technical consultancy to end clients.</li>
               </ul>
+            </Card>
+
+            {/* E-commerce Developer */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">E-commerce Creation and Full Stack Developer</h3>
+                  <p className="text-primary font-medium">Freelance</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2015 - 2016</span>
+                </div>
+              </div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Shopify Liquid language programmer.</li>
+                <li>• Implemented SEO/SEM strategies and digital marketing campaigns.</li>
+              </ul>
+            </Card>
+
+            {/* Volunteer Work */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Volunteer Partnership</h3>
+                  <p className="text-primary font-medium">Best Buddies International Foundation</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2012 - 2013</span>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Education Section */}
-      <section className="py-12 lg:py-20 px-4 bg-card/30">
-        <div className="max-w-4xl mx-auto">
-          <div
-            className="flex items-center gap-3 mb-8 lg:mb-12"
-            style={{ transform: `translateY(${Math.max(0, (scrollY - 2000) * 0.1)}px)` }}
-          >
-            <GraduationCap className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
-            <div className="terminal-prompt text-2xl lg:text-4xl font-bold">grep -r education /var/log/</div>
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-12">
+            <GraduationCap className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Education & Certifications</h2>
           </div>
 
-          <div className="space-y-6 lg:space-y-8">
-            {/* University Degree */}
-            <Card
-              className="p-4 lg:p-8 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 2200) * 0.05)}px)` }}
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-xs lg:text-sm text-muted-foreground">2014 - 2020</span>
+          <div className="space-y-6">
+            {/* Enterprise Security Nanodegree */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Enterprise Security Nanodegree</h3>
+                  <p className="text-primary font-medium mb-2">BERTELSMANN Tech Booster by Udacity</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2024</span>
+                </div>
               </div>
-              <h3 className="text-lg lg:text-xl font-semibold mb-2">
-                Grado en Ingeniería de Sistemas Audiovisuales y Multimedia
-              </h3>
-              <p className="text-muted-foreground text-sm lg:text-base">Universidad Rey Juan Carlos - Madrid, España</p>
             </Card>
 
-            {/* Infoblox Certification */}
-            <Card
-              className="p-4 lg:p-8 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-              style={{ transform: `translateY(${Math.max(0, (scrollY - 2400) * 0.05)}px)` }}
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-xs lg:text-sm text-muted-foreground">2021 - 2022</span>
+            {/* BSc Audiovisual */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">BSc. Audiovisual and Multimedia Systems Engineering</h3>
+                  <p className="text-primary font-medium mb-2">Rey Juan Carlos University. Madrid, Spain</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2014 - 2020</span>
+                </div>
               </div>
-              <h3 className="text-lg lg:text-xl font-semibold mb-2">
-                Certificación profesional DDI de{" "}
-                <a
-                  href="https://edu.infoblox.com/DDI-Professional.html"
-                  target="_blank"
-                  className="text-primary hover:text-accent underline inline-flex items-center gap-1"
-                  rel="noreferrer"
-                >
-                  Infoblox, Inc.
-                  <ExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
-                </a>
-              </h3>
-              <p className="text-muted-foreground mb-2 text-sm lg:text-base">Infoblox Online Academy</p>
-              <ul className="space-y-1 text-xs lg:text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Enseñanza sobre protocolos DNS, DHCP e IP Management
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">&gt;</span>
-                  Troubleshooting en solución comercial F-GRID de Infoblox
-                </li>
-              </ul>
             </Card>
 
-            {/* Additional Courses */}
-            <div className="grid md:grid-cols-2 gap-4 lg:gap-6">
-              <Card
-                className="p-4 lg:p-6 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-                style={{ transform: `translateY(${Math.max(0, (scrollY - 2600) * 0.05)}px)` }}
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <Calendar className="w-4 h-4 text-primary" />
-                  <span className="text-xs lg:text-sm text-muted-foreground">2016 - 2017</span>
+            {/* Cybersecurity MOOCs */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Cybersecurity MOOCs</h3>
+                  <p className="text-primary font-medium mb-2">Rey Juan Carlos University. Madrid, Spain</p>
                 </div>
-                <h4 className="font-semibold mb-2 text-sm lg:text-base">MOOC de Ciberseguridad</h4>
-                <p className="text-xs lg:text-sm text-muted-foreground">Universidad Rey Juan Carlos</p>
-              </Card>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2016 - 2017</span>
+                </div>
+              </div>
+            </Card>
 
-              <Card
-                className="p-4 lg:p-6 bg-card border-border terminal-border terminal-shadow hover:shadow-lg transition-all duration-300"
-                style={{ transform: `translateY(${Math.max(0, (scrollY - 2600) * 0.05)}px)` }}
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <Calendar className="w-4 h-4 text-primary" />
-                  <span className="text-xs lg:text-sm text-muted-foreground">2016</span>
+            {/* Digital Marketing */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Digital Marketing MOOCs</h3>
+                  <p className="text-primary font-medium mb-2">IAB SPAIN. Madrid, Spain</p>
                 </div>
-                <h4 className="font-semibold mb-2 text-sm lg:text-base">SAP Desarrollo de Aplicaciones Móviles</h4>
-                <p className="text-xs lg:text-sm text-muted-foreground">Universidad Complutense de Madrid</p>
-              </Card>
-            </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2016</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Mobile Applications Development */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Mobile Applications Development MOOCs</h3>
+                  <p className="text-primary font-medium mb-2">Complutense University of Madrid. Madrid, Spain</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2016</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Materials Engineering */}
+            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-1">Science Degree in Materials Engineering</h3>
+                  <p className="text-primary font-medium mb-2">Simón Bolívar University. Caracas, Venezuela</p>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>2012 - 2014</span>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 lg:py-12 px-4 text-center border-t border-border">
-        <div className="terminal-prompt text-sm lg:text-base">
-          <a
-            href="http://www.felipsandoval.com"
-            target="_blank"
-            className="text-primary hover:text-accent underline"
-            rel="noreferrer"
-          >
-            felipe sandoval ©2025
-          </a>
+      {/* Projects Section */}
+      <section className="py-16 px-4 bg-muted/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-12">
+            <Terminal className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Featured Projects</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="p-6 hover:shadow-lg transition-all duration-300 group bg-card border border-border">
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  Network Automation Suite
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Python-based automation tools for FTTH network management and GPON provisioning.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <Badge variant="outline" className="text-xs">Python</Badge>
+                <Badge variant="outline" className="text-xs">SNMP</Badge>
+                <Badge variant="outline" className="text-xs">Linux</Badge>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-all duration-300 group bg-card border border-border">
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  OTT/IPTV Management Platform
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Full-stack application for video streaming platform management and monitoring.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <Badge variant="outline" className="text-xs">JavaScript</Badge>
+                <Badge variant="outline" className="text-xs">PHP</Badge>
+                <Badge variant="outline" className="text-xs">MySQL</Badge>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-all duration-300 group bg-card border border-border">
+              <div className="mb-4">
+                <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  E-commerce Solutions
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Custom Shopify themes and e-commerce platforms with integrated SEO/SEM strategies.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <Badge variant="outline" className="text-xs">Shopify Liquid</Badge>
+                <Badge variant="outline" className="text-xs">SEO</Badge>
+                <Badge variant="outline" className="text-xs">Digital Marketing</Badge>
+              </div>
+            </Card>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-card border border-border p-8 terminal-border">
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <Terminal className="w-5 h-5" />
+              <span className="text-sm text-muted-foreground">felipe@cv:~$ echo "Let's connect"</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Build Something Amazing?</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+              I'm always interested in discussing new opportunities, innovative projects, and challenging problems in software development.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="mailto:your.email@example.com"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Get In Touch
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-md hover:bg-accent transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
