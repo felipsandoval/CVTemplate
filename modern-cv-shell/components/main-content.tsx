@@ -398,18 +398,11 @@ export function MainContent() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:your.email@example.com"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
+                href="mailto:hola@felipsandoval.com"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-accent transition-colors"
               >
                 <ExternalLink className="w-4 h-4" />
                 Get In Touch
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-md hover:bg-accent transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Download CV
               </a>
             </div>
           </div>
