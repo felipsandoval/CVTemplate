@@ -388,10 +388,6 @@ export function MainContent() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-card border border-border p-8 terminal-border">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Terminal className="w-5 h-5" />
-              <span className="text-sm text-muted-foreground">felipe@cv:~$ echo "Let's connect"</span>
-            </div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Build Something Amazing?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
               I'm always interested in discussing new opportunities, innovative projects, and challenging problems in software development.

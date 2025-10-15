@@ -93,7 +93,7 @@ export function Sidebar() {
               <p className="text-xs lg:text-sm mb-1">Self-learning [█████████░] 95%</p>
             </div>
             <div>
-              <p className="text-xs lg:text-sm mb-1">Team Management [█████████░] 90%</p>
+              <p className="text-xs lg:text-sm mb-1">Management [████████░░] 80%</p>
             </div>
             <div>
               <p className="text-xs lg:text-sm mb-1">Innovation [████████░░] 85%</p>
@@ -103,7 +103,7 @@ export function Sidebar() {
 
         {/* Languages */}
         <div className="mb-6">
-          <div className="terminal-prompt text-sm mb-2">locale -a</div>
+          <div className="terminal-prompt text-sm mb-2">languages -a</div>
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <span className="text-xs lg:text-sm">Spanish</span>
