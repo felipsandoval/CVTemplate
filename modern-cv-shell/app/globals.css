@@ -4,40 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Terminal Theme - Minimalist Bash Terminal */
-  --background: #0a0a0a; /* Pure black terminal background */
-  --foreground: #00ff00; /* Classic terminal green */
-  --card: #111111; /* Slightly lighter black for cards */
-  --card-foreground: #00ff00;
-  --popover: #111111;
-  --popover-foreground: #00ff00;
-  --primary: #00ff00; /* Terminal green */
-  --primary-foreground: #0a0a0a;
-  --secondary: #333333; /* Dark gray */
-  --secondary-foreground: #ffffff;
-  --muted: #1a1a1a;
-  --muted-foreground: #888888; /* Gray for secondary text */
-  --accent: #ffff00; /* Terminal yellow for highlights */
-  --accent-foreground: #0a0a0a;
-  --destructive: #ff0000; /* Terminal red */
-  --destructive-foreground: #ffffff;
-  --border: #333333;
-  --input: #1a1a1a;
-  --ring: #00ff00;
-  --chart-1: #00ff00;
-  --chart-2: #ffff00;
-  --chart-3: #ff0000;
-  --chart-4: #00ffff;
-  --chart-5: #ff00ff;
-  --radius: 0rem; /* No rounded corners for terminal look */
-  --sidebar: #0a0a0a;
-  --sidebar-foreground: #00ff00;
-  --sidebar-primary: #00ff00;
-  --sidebar-primary-foreground: #0a0a0a;
-  --sidebar-accent: #1a1a1a;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #333333;
-  --sidebar-ring: #00ff00;
+  /* Blue and Yellow Theme - Dark Tech Interface */
+  --background: #001C3D; /* Deep Navy Blue */
+  --foreground: #FFC72C; /* Vibrant Amber/Gold */
+  --card: #002E65; /* Darker Blue for cards */
+  --card-foreground: #FFC72C;
+  --popover: #002E65;
+  --popover-foreground: #FFC72C;
+  --primary: #FFC72C; /* Primary Gold/Amber */
+  --primary-foreground: #001C3D;
+  --secondary: #4A6B97; /* Muted Medium Blue */
+  --secondary-foreground: #FFFFFF; /* Pure White */
+  --muted: #003878; /* Mid-tone Blue for subtle elements */
+  --muted-foreground: #A6B4C9; /* Light Gray-Blue for secondary text */
+  --accent: #FDD017; /* Brighter Yellow/Gold for highlights */
+  --accent-foreground: #001C3D;
+  --destructive: #FF3B30; /* Classic Red */
+  --destructive-foreground: #FFFFFF;
+  --border: #00479A; /* Vibrant Border Blue */
+  --input: #002E65;
+  --ring: #FFC72C;
+  --chart-1: #FFC72C; /* Gold */
+  --chart-2: #00BFFF; /* Sky Blue */
+  --chart-3: #FF8C00; /* Dark Orange */
+  --chart-4: #FDD017; /* Bright Yellow */
+  --chart-5: #FF3B30; /* Red */
+  --radius: 0rem;
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--muted);
+  --sidebar-accent-foreground: var(--secondary-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 }
 
 @theme inline {
